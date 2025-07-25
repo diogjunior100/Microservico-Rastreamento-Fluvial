@@ -1,0 +1,12 @@
+services:
+  megawish:
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    networks:
+      - megawish-network
+
+networks:
+  megawish-network:
+    driver: bridge
